@@ -1,0 +1,41 @@
+.grid-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  gap: 10px;
+}
+.tile {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.correct {
+  background-color: lightgreen;
+}
+.close {
+  background-color: yellow;
+}
+.incorrect {
+  background-color: lightgrey;
+}
+
+.win {
+  font-size: 50px;
+  color: green;
+}
+.lose {
+  font-size: 50px;
+  color: red;
+}
