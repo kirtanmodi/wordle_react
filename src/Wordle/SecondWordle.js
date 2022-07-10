@@ -82,9 +82,14 @@ function SecondWordle() {
       }, 250);
       setIsGameOver(true);
     }
+    if (
+      guesses.includes(solution) === false &&
+      guesses.findIndex((val) => val == null) === -1
+    ) {
+      setPlayerLose(true);
+    }
     if (guesses.findIndex((val) => val == null) === -1) {
       setIsGameOver(true);
-      setPlayerLose(true);
     }
 
     const handleType = (e) => {

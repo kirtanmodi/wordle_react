@@ -1,7 +1,8 @@
 body {
-  position: absolute;
-  top: 15vh;
-  left: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   /* transform: translate(-50%, -50%); */
   font-family: "Times New Roman", Times, serif;
 }
